@@ -1,0 +1,105 @@
+.Tech11-Container{
+position: absolute; top: 10%; left: 38%;
+
+}
+
+.Tech11-Heading{
+position: relative; left: -150px;
+}
+
+.Tech11-Media-Container{
+border: 2px solid rgba(0, 0, 0, 0);
+width: 700px;
+position: relative; left: -310px;top: -35px;
+display: flex;
+justify-content: space-between;
+}
+
+.Tech11-Social-Media-Logo{
+    height: 70px; width: 100px;
+}
+.Tech11-line{
+    border-bottom: 2px solid brown;
+    position: absolute; top: 19%;   left:22% ;
+    width: 65%;
+}
+
+.Tech11-Boy-Logo{
+    height: 60px; width: 60px;
+    position: relative; left: 25%;
+}
+
+.Tech11-Image{
+    box-shadow: 3px 3px 3px black;
+    width: 350px; height: 190px;
+    position: relative; top: -30px; left: -20px;
+}
+
+.Tech11-Para-Container{
+width: 700px;
+position: relative; left: -185px;
+}
+
+.Tech11-Back-Button{
+    padding: 10px;
+    color:black;
+    background-color: azure;
+    border-radius: 20px;
+    position: relative; left: -470px; top: -50px;
+    cursor: pointer;
+}
+
+.Tech11-Image-Name{
+    color: rgb(255,0,187);
+    position: relative; left: -21%; top: -3px;
+    font-size: 18px;
+}
+
+.Tech11-Date{
+    position:relative; top: 10px; left: -120px;
+}
+.Tech11-Dimitry{
+    position:relative; top: -9px; left: 90px;
+}
+
+@media only screen and (max-width:856px){
+
+.Tech11-Heading{
+    position: relative; left: -120px;
+    width: 350px;
+}
+
+.Tech11-line{
+position: relative; left: 11px; top: 150px;
+width: 310px;
+}
+
+.Tech11-Media-Container{
+    position: relative; top: 22px; left: -290px;
+}
+
+.Tech11-Social-Media-Logo{
+    position: relative; left: -410px; top: -65px;
+}
+
+.Tech11-Image{
+    position: relative; left:-100px; top: 16px;
+    height: 200px;
+    width: 300px;
+}
+
+.Tech11-Image-Name{
+    position: relative; left: -92px; top: 20px;
+    width: 310px;
+}
+
+.Tech11-Para-Container{
+    position: relative; left: -100px; top: 13px;
+    width: 280px;
+}
+
+.Tech11-Back-Button{
+    position: relative; left: -110px; top: 1120px;
+}
+
+}

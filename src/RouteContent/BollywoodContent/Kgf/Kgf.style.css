@@ -1,0 +1,99 @@
+.Kgf-Container{
+position: absolute; top: 10%; left: 38%;
+
+}
+
+.Kgf-Media-Container{
+border: 2px solid rgba(0, 0, 0, 0);
+width: 700px;
+position: relative; left: -310px;top: -45px;
+display: flex;
+justify-content: space-between;
+}
+
+.Kgf-Social-Media-Logo{
+    height: 70px; width: 100px;
+}
+.Kgf-line{
+    border-bottom: 2px solid brown;
+    position: absolute; top: 19%;   left:25% ;
+    width: 50%;
+}
+
+.Kgf-Boy-Logo{
+    height: 60px; width: 60px;
+    position: relative; left: 25%;
+}
+
+.Kgf-Image{
+    box-shadow: 3px 3px 3px black;
+    width: 350px; height: 190px;
+    position: relative; top: -30px; left: -20px;
+}
+
+.Kgf-Para-Container{
+width: 700px;
+position: relative; left: -185px;
+}
+
+.Kgf-Back-Button{
+    padding: 10px;
+    color:black;
+    background-color: azure;
+    border-radius: 20px;
+    position: relative; left: -470px; top: -50px;
+    cursor: pointer;
+}
+
+.Kgf-Image-Name{
+    color: rgb(255,0,187);
+    position: relative; left: 5%; top: -3px;
+    font-size: 18px;
+}
+
+.Kgf-Date{
+    position:relative; top: 10px; left: -120px;
+}
+.Kgf-Dimitry{
+    position:relative; top: -9px; left: 90px;
+}
+
+@media only screen and (max-width:856px){
+
+.Kgf-Heading{
+    position: relative; left: -120px;
+}
+
+.Kgf-line{
+position: relative; left: 11px; top: 110px;
+width: 250px;
+}
+
+.Kgf-Media-Container{
+    position: relative; top: 10px; left: -290px;
+}
+
+.Kgf-Social-Media-Logo{
+    position: relative; left: -410px; top: -65px;
+}
+
+.Kgf-Image{
+    position: relative; left:-100px; top: 16px;
+    height: 200px;
+    width: 300px;
+}
+
+.Kgf-Image-Name{
+    position: relative; left: -52px; top: 20px;
+}
+
+.Kgf-Para-Container{
+    position: relative; left: -100px; top: 13px;
+    width: 280px;
+}
+
+.Kgf-Back-Button{
+    position: relative; left: -110px; top: 1010px;
+}
+
+}

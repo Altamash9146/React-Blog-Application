@@ -1,0 +1,105 @@
+.Food7-Container{
+position: absolute; top: 10%; left: 38%;
+
+}
+
+.Food7-Heading{
+    position: relative; left: -20px;
+}
+
+.Food7-Media-Container{
+border: 2px solid rgba(0, 0, 0, 0);
+width: 700px;
+position: relative; left: -310px;top: -35px;
+display: flex;
+justify-content: space-between;
+}
+
+.Food7-Social-Media-Logo{
+    height: 70px; width: 100px;
+}
+.Food7-line{
+    border-bottom: 2px solid brown;
+    position: absolute; top: 19%;   left:21.5% ;
+    width: 60%;
+}
+
+.Food7-Boy-Logo{
+    height: 60px; width: 60px;
+    position: relative; left: 25%;
+}
+
+.Food7-Image{
+    box-shadow: 3px 3px 3px black;
+    width: 350px; height: 190px;
+    position: relative; top: -30px; left: -20px;
+}
+
+.Food7-Para-Container{
+width: 700px;
+position: relative; left: -185px;
+}
+
+.Food7-Back-Button{
+    padding: 10px;
+    color:black;
+    background-color: azure;
+    border-radius: 20px;
+    position: relative; left: -470px; top: -50px;
+    cursor: pointer;
+}
+
+.Food7-Image-Name{
+    color: rgb(255,0,187);
+    position: relative; left: -1%; top: -3px;
+    font-size: 18px;
+}
+
+.Food7-Date{
+    position:relative; top: 10px; left: -120px;
+}
+.Food7-Dimitry{
+    position:relative; top: -9px; left: 90px;
+}
+
+@media only screen and (max-width:856px){
+
+.Food7-Heading{
+    position: relative; left: -120px;
+    width: 350px;
+}
+
+.Food7-line{
+position: relative; left: 11px; top: 105px;
+width: 310px;
+}
+
+.Food7-Media-Container{
+    position: relative; top: 22px; left: -290px;
+}
+
+.Food7-Social-Media-Logo{
+    position: relative; left: -410px; top: -65px;
+}
+
+.Food7-Image{
+    position: relative; left:-100px; top: 16px;
+    height: 200px;
+    width: 300px;
+}
+
+.Food7-Image-Name{
+    position: relative; left: -92px; top: 20px;
+    width: 310px;
+}
+
+.Food7-Para-Container{
+    position: relative; left: -100px; top: 13px;
+    width: 280px;
+}
+
+.Food7-Back-Button{
+    position: relative; left: -110px; top: 990px;
+}
+
+}
