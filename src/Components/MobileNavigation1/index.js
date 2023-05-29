@@ -3,7 +3,7 @@ import {  NavLink} from "react-router-dom";
 import "./MobileN.css"
 
 const MobileN = () =>{
-const [open,setopen] = useState(true)
+const [open,setopen] = useState(false)
 
 const togglenav = () =>{
     setopen(!open)
