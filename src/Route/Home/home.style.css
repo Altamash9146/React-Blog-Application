@@ -3,7 +3,7 @@
 
 .Banner-Container{
     position: absolute; left: -1%; top: 0%; 
-    height:500%; width: 100.7%;
+    height:550%; width: 100.7%;
     border: 2px solid rgba(0, 0, 0, 0);
     background-image: linear-gradient(#e6e6fa ,#f5f0ff,#fde6e3);
     background-repeat: no-repeat;

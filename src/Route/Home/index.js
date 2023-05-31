@@ -8,7 +8,7 @@ import TopPost from "./TopPost";
 import LatestStories from "./LatestStories";
 import ColorCombination from "./ColorCombination";
 import ContextApi from "../../Utility/ContextStore/ContextData";
-import { Logo,TopNavigation } from "../../Components";
+import { Logo,TopNavigation,Footer } from "../../Components";
 import MobileN from "../../Components/MobileNavigation1";
 
 const Home = () =>{
@@ -26,6 +26,7 @@ return(
 <LatestArticle/>
 <TopPost/>
 <LatestStories/>
+<Footer/>
 </ContextApi>
 </>
 )
