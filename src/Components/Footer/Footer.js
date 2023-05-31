@@ -53,7 +53,7 @@ const Footer = () => {
             <i className="fas fa-home"></i> Delhi, NY 10012, India
           </p>
           <p>
-            <i className="fas fa-envelope"></i> xyz@example.com
+            <i className="fas fa-envelope"></i> TheSiren@example.com
           </p>
           <p>
             <i className="fas fa-phone"></i> + 91 83789 79969

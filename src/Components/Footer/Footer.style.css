@@ -4,9 +4,8 @@
   top: 500%;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(#e6e6fa ,#f5f0ff,#fde6e3);
+  background-color: #f2f2f2;
 }
-
 
 .footer-container {
   display: flex;
