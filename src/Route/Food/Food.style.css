@@ -1,6 +1,6 @@
                      /* Food Data Css */
 .Food-Container{
-position:absolute; top: 30%; left: 9%;
+position:absolute; top: 25%; left: 9%;
     }
                         
 .Food-Heading{
@@ -29,7 +29,7 @@ position:absolute; top: 30%; left: 9%;
                         
                 /*   Food Top Post Css  */
 .Food-Top-Post-Container{
-    position: absolute; top: 30%; left: 58%;
+    position: absolute; top: 25%; left: 58%;
 }
                                                                     
 .Food-Top-Post-Heading{

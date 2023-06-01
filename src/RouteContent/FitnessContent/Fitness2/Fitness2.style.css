@@ -3,39 +3,48 @@ position: absolute; top: 10%; left: 38%;
 
 }
 
-.Fitness2-Media-Container{
-border: 2px solid rgba(0, 0, 0, 0);
-width: 700px;
-position: relative; left: -310px;top: -35px;
-display: flex;
-justify-content: space-between;
-}
 .Fitness2-Heading{
-    position: relative; left: -60px;
+    position: relative; left: -80px;
 }
+
+
+.Fitness2-Media-Container{
+    border: 2px solid rgba(0, 0, 0, 0);
+    width: 650px;
+    position: relative; left: -250px;top: -45px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .Fitness2-Social-Media-Logo{
-    height: 70px; width: 100px;
+    height: 25px; width: 100px;
 }
-.Fitness2-line{
-    border-bottom: 2px solid brown;
-    position: absolute; top: 19%;   left:25% ;
-    width: 50%;
-}
+
 
 .Fitness2-Boy-Logo{
-    height: 60px; width: 60px;
-    position: relative; left: 25%;
+    height: 50px; width: 50px;
+    position: relative; left: 25%; top: -10px;
 }
 
+.Fitness2-Date-Container{
+    position: relative; top: -112px; left: -20px; 
+    line-height: 1px;
+}
 .Fitness2-Image{
     box-shadow: 3px 3px 3px black;
     width: 350px; height: 190px;
-    position: relative; top: -30px; left: -20px;
+    position: relative; top: -85px; left: -20px;
+}
+
+.Fitness2-Image-Name{
+    color:rgb(255,0,187);
+    position: relative; left: -6%; top: -60px;
+    font-size: 18px;
 }
 
 .Fitness2-Para-Container{
 width: 700px;
-position: relative; left: -185px;
+position: relative; left: -155px; top: -55px;
 }
 
 .Fitness2-Back-Button{
@@ -47,57 +56,53 @@ position: relative; left: -185px;
     cursor: pointer;
 }
 
-.Fitness2-Image-Name{
-    color:rgb(255,0,187);
-    position: relative; left: -6%; top: -3px;
-    font-size: 18px;
-}
-
-.Fitness2-Date{
-    position:relative; top: 10px; left: -120px;
-}
-.Fitness2-Dimitry{
-    position:relative; top: -9px; left: 90px;
-}
-
 @media only screen and (max-width:856px){
 
 .Fitness2-Heading{
-    position: relative; left: -120px;
+    position: absolute;
+    left: -120px;
     width: 350px;
 }
 
 .Fitness2-line{
-position: relative; left: 11px; top: 125px;
-width: 310px;
+    display: none;
 }
 
 .Fitness2-Media-Container{
-    position: relative; top: 22px; left: -290px;
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    width: 377px;
 }
 
-.Fitness2-Social-Media-Logo{
-    position: relative; left: -410px; top: -65px;
+.Fitness2-Date-Container{
+position: absolute; top: 150px; left: -90px;
+/* display: none; */
 }
+
 
 .Fitness2-Image{
-    position: relative; left:-100px; top: 16px;
+    position: absolute; left:-100px; top: 210px;
     height: 200px;
     width: 300px;
-}
+} 
+
 
 .Fitness2-Image-Name{
-    position: relative; left: -92px; top: 20px;
+    position: absolute; left: -92px; top: 430px;
     width: 310px;
 }
 
 .Fitness2-Para-Container{
-    position: relative; left: -100px; top: 13px;
+    position: absolute; left: -92px; top: 475px;
     width: 280px;
 }
 
 .Fitness2-Back-Button{
-    position: relative; left: -110px; top: 880px;
-}
+    position: relative; left: -110px; top: 1100px;
+} 
+
 
 }
+
+

@@ -1,8 +1,8 @@
 .border{
   border: 2px solid rgba(0, 0, 0, 0);
-  height: 145px; width: 100%;
+  height: 100px; width: 100%;
   position: absolute; top: 0%; left: 0%; 
-  background-image: linear-gradient(lightblue,grey);
+  background: linear-gradient(45deg, #e0f2f1, #ffcdd2);
   position: fixed;
   z-index: 1;
 }
@@ -22,7 +22,7 @@
   cursor: pointer;
   text-align: center;
   position: absolute; top: 1%; left: 47%;
- position: fixed;
+  position: fixed;
 }
 
 @media only screen and (max-width:856px){
@@ -34,7 +34,8 @@ font-size: 15px;
 }
 
 .Heading{
- position: relative ; left: -200px; top: -20px;
+  left: 0;
+  top: -20px;
 
 }
 .border{

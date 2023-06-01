@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(45deg, #e0f2f1, #ffcdd2);
+}
+
 h1:hover{
     color: chocolate;
 }
@@ -7,6 +11,7 @@ h2:hover{
 h3:hover{
     color:blueviolet;
 }
+
 h4:hover{
     color:deepskyblue
 }

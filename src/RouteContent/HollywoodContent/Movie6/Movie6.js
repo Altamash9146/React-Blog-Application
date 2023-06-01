@@ -1,13 +1,14 @@
 import React ,{useContext}from "react";
 import { Link } from "react-router-dom";
+import myImage from "../../../facebook-instagram-and-twitter-icons-editorial-icons-set-free-vector.jpg"
+import "./Movie6.style.css"
 import Store from "../../../Utility/ContextStore/ContextApi";
 
 const  Movie6Content = ()=>{
     const [data] = useContext(Store)
-    console.log("DATATTATA",data);
+    // console.log("DATATTATA",data);
 return(
     <>
-    <div className="Movie6-line"/>
     <div className="Movie6-Container">
  
          
@@ -15,13 +16,16 @@ return(
     return(
         <div key={item}>
        
-        <h3 className="Movie6-Heading">!!!{d.title6}!!!</h3>
+        <h2 className="Movie6-Heading">!!!{d.title6}!!!</h2>
         <Link to={"/Hollywood"}><button className="Movie6-Back-Button">Let's Explore More Hollywood</button></Link> 
         <div className="Movie6-Media-Container">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXc28Vjal3-9jEdZOGtnVyHNdo4InmpgQo-g&usqp=CAU" alt="Not-Found" className="Movie6-Boy-Logo"/>
-            <p className="Movie6-Dimitry">Dimitry Nozhenko</p>
-            <p className="Movie6-Date">Jan 28 2019 10 min read</p>
-        <img src="https://img.freepik.com/premium-vector/facebook-instagram-twitter-icon_469489-856.jpg" alt="Not-Found"  className="Movie6-Social-Media-Logo"/>
+        <img src="https://w1.pngwing.com/pngs/743/500/png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon-thumbnail.png" alt="Not-Found" className="Movie6-Boy-Logo"/>
+        <img src={myImage} alt="Not-Found"  className="Movie6-Social-Media-Logo"/>
+        </div>
+
+        <div className="Movie6-Date-Container">
+        <p className="Movie6-Dimitry">Dimitry Nozhenko</p>
+        <p className="Movie6-Date">Jan 28 2019 10 min read</p>
         </div>
      
         <img src={d.img6} alt="Not-Found" className="Movie6-Image"/>

@@ -1,6 +1,6 @@
                      /* Technology Data Css */
 .Technology-Container{
-position:absolute; top: 30%; left: 9%;
+position:absolute; top: 25%; left: 9%;
  }
 
 .Technology-Heading{
@@ -29,7 +29,7 @@ position:absolute; top: 30%; left: 9%;
 
                 /*   Technology Top Post Css  */
 .Technology-Top-Post-Container{
-    position: absolute; top: 30%; left: 58%;
+    position: absolute; top: 25%; left: 58%;
 }
                                             
 .Technology-Top-Post-Heading{

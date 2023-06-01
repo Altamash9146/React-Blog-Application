@@ -1,6 +1,6 @@
                      /* Fitness Data Css */
 .Fitness-Container{
-position:absolute; top: 30%; left: 9%;
+position:absolute; top: 25%; left: 9%;
     }
                         
 .Fitness-Heading{
@@ -29,7 +29,7 @@ position:absolute; top: 30%; left: 9%;
                         
                 /*   Fitness Top Post Css  */
 .Fitness-Top-Post-Container{
-    position: absolute; top: 30%; left: 58%;
+    position: absolute; top: 25%; left: 58%;
 }
                                                                     
 .Fitness-Top-Post-Heading{

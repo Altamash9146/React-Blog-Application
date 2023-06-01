@@ -23,7 +23,7 @@ const togglenav = () =>{
         <div className="line3" onClick={togglenav}></div>
         </div>
 
-{open && <div className="Mobile-Route-Navigation-Container">
+{open && <div className="Mobile-Route-Navigation-Container"  onClick={togglenav}>
         <NavLink to={"/"} activeclassname="active">Home</NavLink><hr/>
         <NavLink to={"/Bollywood"} activeclassname="active">Bollywood</NavLink><hr/>
         <NavLink to={"/Technology"} activeclassname="active">Technology</NavLink><hr/>

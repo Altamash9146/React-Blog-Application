@@ -9,6 +9,7 @@ const [data] = useContext(Store)
 
 return (
 <>
+<div className='Background-Color'></div>
 <div className='Bollywood-Container'>
 <h2 className="Bollywood-Heading">Bollywood</h2>
 

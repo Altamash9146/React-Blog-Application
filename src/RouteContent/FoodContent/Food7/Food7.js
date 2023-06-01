@@ -1,13 +1,14 @@
 import React ,{useContext}from "react";
 import { Link } from "react-router-dom";
+import myImage from "../../../facebook-instagram-and-twitter-icons-editorial-icons-set-free-vector.jpg"
+import "./Food7.style.css"
 import Store from "../../../Utility/ContextStore/ContextApi";
 
 const  Food7Content = ()=>{
     const [data] = useContext(Store)
-    console.log("DATATTATA",data);
+    // console.log("DATATTATA",data);
 return(
     <>
-    <div className="Food7-line"/>
     <div className="Food7-Container">
  
          
@@ -15,21 +16,24 @@ return(
     return(
         <div key={item}>
        
-        <h3 className="Food7-Heading">!!!{d.title1}!!!</h3>
-        <Link to={"/Food"}><button className="Food7-Back-Button">Let's Explore More Food</button></Link> 
+        <h2 className="Food7-Heading">!!!{d.title7}!!!</h2>
+        <Link to={"/Food"}><button className="Food7-Back-Button">Let's Explore More Fitness</button></Link> 
         <div className="Food7-Media-Container">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXc28Vjal3-9jEdZOGtnVyHNdo4InmpgQo-g&usqp=CAU" alt="Not-Found" className="Food7-Boy-Logo"/>
-            <p className="Food7-Dimitry">Dimitry Nozhenko</p>
-            <p className="Food7-Date">Jan 28 2019 10 min read</p>
-        <img src="https://img.freepik.com/premium-vector/facebook-instagram-twitter-icon_469489-856.jpg" alt="Not-Found"  className="Food7-Social-Media-Logo"/>
+        <img src="https://w1.pngwing.com/pngs/743/500/png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon-thumbnail.png" alt="Not-Found" className="Food7-Boy-Logo"/>
+        <img src={myImage} alt="Not-Found"  className="Food7-Social-Media-Logo"/>
+        </div>
+
+        <div className="Food7-Date-Container">
+        <p className="Food7-Dimitry">Dimitry Nozhenko</p>
+        <p className="Food7-Date">Jan 28 2019 10 min read</p>
         </div>
      
-        <img src={d.img1} alt="Not-Found" className="Food7-Image"/>
-        <div className="Food7-Image-Name">Image:{d.title1}</div>
+        <img src={d.img7} alt="Not-Found" className="Food7-Image"/>
+        <div className="Food7-Image-Name">Image:{d.title7}</div>
         <div className="Food7-Para-Container">
-        <p>{d.apara1}</p>
-        <p>{d.apara2}</p>
-        <p>{d.apara3}</p>
+        <p>{d.gpara1}</p>
+        <p>{d.gpara2}</p>
+        <p>{d.gpara3}</p>
         </div>
         </div>
     )

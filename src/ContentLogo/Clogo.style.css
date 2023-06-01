@@ -28,15 +28,20 @@
 @media only screen and (max-width:856px){
 
   .Cborder{
-    width: 100%;
+    width: 99.5%;
   }
 
   .CVertical-Text{
-    position: relative; top: -30px;  left:-100px ;
+    position: relative;
+    top: -16px;
+    left: -41px;
   }
 
   .Siren{
-    position: relative; top: -36px; left: -100px;
+    position: relative;
+    top: -22px;
+    left: -41px;
+    font-size: xx-large;
   } 
 
 

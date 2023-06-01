@@ -6,7 +6,6 @@ import Latest from "./Latest";
 import LatestArticle from "./LatestArticle";
 import TopPost from "./TopPost";
 import LatestStories from "./LatestStories";
-import ColorCombination from "./ColorCombination";
 import ContextApi from "../../Utility/ContextStore/ContextData";
 import { Logo,TopNavigation,Footer } from "../../Components";
 import MobileN from "../../Components/MobileNavigation1";
@@ -20,7 +19,6 @@ return(
 <MobileN/>
 <TopNavigation/>
 <ContextApi>
-<ColorCombination/>
 <Banner/>
 <Latest/>
 <LatestArticle/>

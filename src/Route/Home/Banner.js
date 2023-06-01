@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 const Banner = () =>{
     const [data] = useContext(Store)
     return(
-        <>
+        <div className="Banner-Container">
+      
 {data.filter((item)=>item.cat ==="Hollywood-Images").map((d,item)=>{
     return(
         <div key={item}>
@@ -13,9 +14,11 @@ const Banner = () =>{
          className="Banner-Img-1" alt="Not-Found"/></Link>
 
         <div className="Banner-Img-Text">
+        <div >
             <h2>THE FLASH OFFICIAL TRAILER 2</h2>
             <p>Travel/August 21 2017</p>
         </div> 
+        </div>
       </div>
     )
 })}
@@ -23,7 +26,7 @@ const Banner = () =>{
        {data.filter((item)=>item.cat ==="Technology-Images").map((d,item)=>{
     return(
       
-        <div className="Banner-Second-Image-Container" key={item}> 
+        <div key={item}> 
         <Link to={"/TechnologyContent/Tech6"} className='Link-Text'><img src={d.img6}
          className="Banner-Img-2" alt="Not-Found"/></Link>
 
@@ -40,13 +43,12 @@ const Banner = () =>{
                <p>Travel/August 21 2017</p>
         </div> 
 
-
         </div>
     
     )
 })}
        
-        </>
+        </div>
     )
 }
 

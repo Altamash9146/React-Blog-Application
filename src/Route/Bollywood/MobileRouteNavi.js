@@ -15,15 +15,15 @@ const togglenav = () =>{
         <h1 className="MHeading"><span className="MVertical-Text">The</span>Siren</h1></div>
 
  <div className="Mobile-Route-Menu-Container" onClick={togglenav}>
-        <div className="line1" onClick={togglenav}></div>
-        <div className="line0" onClick={togglenav}></div>
-        <div className="line2" onClick={togglenav}></div>
-        <div className="line0" onClick={togglenav}></div>
-        <div className="line0" onClick={togglenav}></div>
-        <div className="line3" onClick={togglenav}></div>
+        <div className="line1"></div>
+        <div className="line0"></div>
+        <div className="line2"></div>
+        <div className="line0"></div>
+        <div className="line0"></div>
+        <div className="line3"></div>
         </div>
 
-{open && <div className="Mobile-Route-Navigation-Container">
+{open && <div className="Mobile-Route-Navigation-Container" onClick={togglenav}>
         <NavLink to={"/"} activeclassname="active">Home</NavLink><hr/>
         <NavLink to={"/Bollywood"} activeclassname="active">Bollywood</NavLink><hr/>
         <NavLink to={"/Technology"} activeclassname="active">Technology</NavLink><hr/>
