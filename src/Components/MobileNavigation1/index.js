@@ -19,7 +19,7 @@ const togglenav = () =>{
 
 return(
         <>
-
+<div className="Top-Mobile-Adjuster">
 <div className="Mobile-Border">
 <h1 className="Heading"><span className="Vertical-Text">The</span>Siren</h1>
 </div>
@@ -32,6 +32,7 @@ return(
         <div className="line0"></div>
         <div className="line0"></div>
         <div className="line3"></div>
+        </div>
         </div>
 
 {open && ( <div className="Mobile-Navigation-Container" >

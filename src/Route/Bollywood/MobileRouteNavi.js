@@ -10,7 +10,7 @@ const togglenav = () =>{
 
     return(
         <>
-
+<div className="Top-Mobile-Adjuster">
 <div className="Mobile-Route-Border">
         <h1 className="MHeading"><span className="MVertical-Text">The</span>Siren</h1></div>
 
@@ -22,6 +22,7 @@ const togglenav = () =>{
         <div className="line0"></div>
         <div className="line3"></div>
         </div>
+</div>
 
 {open && <div className="Mobile-Route-Navigation-Container" onClick={togglenav}>
         <NavLink to={"/"} activeclassname="active">Home</NavLink><hr/>

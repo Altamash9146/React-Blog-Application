@@ -21,7 +21,7 @@ const Footer = () => {
             <Link to={'./Hollywood'} className="footer-link">Hollywood</Link>
           </p>
           <p>
-            <Link to={'./Bollywood'}  className="footer-link">Bollywod</Link>
+            <Link to={'./Bollywood'}  className="footer-link">Bollywood</Link>
           </p>
           <p>
             <Link to={'./Fitness'}  className="footer-link">Fitness </Link>

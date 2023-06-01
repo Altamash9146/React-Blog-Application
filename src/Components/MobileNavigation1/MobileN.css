@@ -67,6 +67,12 @@ hr{
 
 @media only screen and (max-width: 856px){
 
+    .Top-Mobile-Adjuster{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
     .Mobile-Navigation-Container{
         display: flex;
         flex-direction: column;
@@ -80,7 +86,7 @@ hr{
     }
 
     .Mobile-Menu-Container{
-        position: fixed; left: 360px; top: 8px;
+        position: fixed; top: 8px;
         display: block;
     }
 
