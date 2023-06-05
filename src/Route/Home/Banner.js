@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Banner = () =>{
     const [data] = useContext(Store)
     return(
+        <div className="Banner-Main-Container">
         <div className="Banner-Container">
       
 {data.filter((item)=>item.cat ==="Hollywood-Images").map((d,item)=>{
@@ -47,7 +48,7 @@ const Banner = () =>{
     
     )
 })}
-       
+       </div>
         </div>
     )
 }

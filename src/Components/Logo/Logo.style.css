@@ -1,6 +1,6 @@
 .border{
   border: 2px solid rgba(0, 0, 0, 0);
-  height: 100px; width: 100%;
+  height: 17vh; width: 100%;
   position: absolute; top: 0%; left: 0%; 
   background: linear-gradient(45deg, #e0f2f1, #ffcdd2);
   position: fixed;

@@ -1,12 +1,16 @@
 
                             /* Banner File  Css */
+.Banner-Main-Container{
+    display: flex;
+    justify-content: center;
+}
 
 .Banner-Container{
     border: 2px solid rgba(255, 255, 255, 0);
     width: 300px;
     display: flex;
     justify-content: space-evenly;
-    position: absolute; top: 20%; left: 35%;
+    position: absolute; top: 20%;
    
 }
 
