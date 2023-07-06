@@ -1,11 +1,25 @@
-import React, { useContext } from 'react'
+import React, { useEffect,useState } from 'react'
 import { Link} from 'react-router-dom';
-import Store from '../../Utility/ContextStore/ContextApi';
+import axios from 'axios';
 
 const BollywoodData = () => {
 
-const [data] = useContext(Store)
-// console.log("ContextData",data);
+  const [data,setData] = useState([])
+
+  useEffect(()=>{
+    Fetchdata()
+  },[])
+
+  const Fetchdata = async ()=>{
+      try{
+          const response = await axios.get(`http://localhost:9002/api/blog/Bollywood-Images`)
+          setData(response.data)
+      }
+
+      catch(error){
+        console.log(error);
+      }
+  }
 
 return (
 <>
@@ -13,9 +27,9 @@ return (
 <div className='Bollywood-Container'>
 <h2 className="Bollywood-Heading">Bollywood</h2>
 
-{data.filter((item)=>item.cat ==='Bollywood-Images').map((d,item)=>{
+{data.filter((item)=>item.cat ==='Bollywood-Images').map((d,index)=>{
   return(
- <div key={item}>
+ <div key={index}>
     <div className="Bollywood-Image-Container">
     <Link to={"/BollywoodContent/Dangal"} className='Link-Text'><img src={d.img1} alt='Not-Found'className='Bollywood-Image'/></Link>
     <Link to={"/BollywoodContent/Bahubali"} className='Link-Text'><img src={d.img2} alt='Not-Found'className='Bollywood-Image'/></Link>

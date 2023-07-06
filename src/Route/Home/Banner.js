@@ -1,9 +1,41 @@
-import React, { useContext }  from "react";
-import Store from "../../Utility/ContextStore/ContextApi";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import { useState,useEffect } from "react";
 
 const Banner = () =>{
-    const [data] = useContext(Store)
+    const [data,setData] = useState([])
+    const [Techdata,setTechData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Hollywood-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
+
+    useEffect(()=>{
+        Fetchtechdata()
+      },[])
+    
+      const Fetchtechdata = async ()=>{
+          try{
+              const response = await axios.get(`http://localhost:9002/api/blog/Technology-Images`)
+              setTechData(response.data)
+          }
+    
+          catch(error){
+            console.log(error);
+          }
+      }
+
     return(
         <div className="Banner-Main-Container">
         <div className="Banner-Container">
@@ -24,7 +56,7 @@ const Banner = () =>{
     )
 })}
        
-       {data.filter((item)=>item.cat ==="Technology-Images").map((d,item)=>{
+       {Techdata.filter((item)=>item.cat ==="Technology-Images").map((d,item)=>{
     return(
       
         <div key={item}> 

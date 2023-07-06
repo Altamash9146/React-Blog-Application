@@ -24,6 +24,32 @@
   position: absolute; top: 1%; left: 47%;
   position: fixed;
 }
+.Logo-Login-Button{
+  position: relative; left: 60%; top: 20px;
+  cursor: pointer;
+  background-color: pink;
+  padding: 10px;
+  border: 4px; width: 130px;
+  border-radius: 5px;
+}
+
+.Logo-Signup-Button{
+  position: relative; left: 61%; top: 20px;
+  cursor: pointer;
+  background-color: pink;
+  padding: 10px;
+  border: 4px; width: 130px;
+  border-radius: 5px;
+}
+
+.Logo-Logout-Button{
+  position: relative; left: 61%; top: 20px;
+  cursor: pointer;
+  background-color: pink;
+  padding: 10px;
+  border: 4px; width: 130px;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width:856px){
 

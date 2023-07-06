@@ -1,9 +1,25 @@
-import React, { useContext } from 'react'
-import Store from '../../Utility/ContextStore/ContextApi';
+import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const HollywoodTopPost = () => {
-  const [data] = useContext(Store)
+  const [data,setData] = useState([])
+
+  useEffect(()=>{
+    Fetchdata()
+  },[])
+
+  const Fetchdata = async ()=>{
+      try{
+          const response = await axios.get(`http://localhost:9002/api/blog/Hollywood-Images`)
+          setData(response.data)
+      }
+
+      catch(error){
+        console.log(error);
+      }
+  }
+
   return (
    <>
       <div className="Hollywood-Top-Post-Container">
@@ -67,23 +83,8 @@ return(
 
 )
 })}
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    {/* <div className="Hollywood-Advertisement-Container">
-        <h4>Advertisement</h4>
-         </div> */}
-
+</div>
+    
     </>
   )
 }

@@ -9,7 +9,7 @@ const [show, setShow] = useState(false)
 const togglenav = () =>{
     setOpen(!open)
     console.log(open,"Result");
-    console.log("YIIIIIIIIIi");
+//     console.log("YIIIIIIIIIi");
 }
 
 // const toggleBar = () =>{

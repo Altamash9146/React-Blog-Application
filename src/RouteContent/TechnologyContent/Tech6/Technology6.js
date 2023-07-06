@@ -1,11 +1,25 @@
-import React ,{useContext}from "react";
+import React ,{useState,useEffect}from "react";
 import { Link } from "react-router-dom";
 import myImage from "../../../facebook-instagram-and-twitter-icons-editorial-icons-set-free-vector.jpg"
-import Store from "../../../Utility/ContextStore/ContextApi";
+import axios from "axios";
 
 const  Tech6Content = ()=>{
-    const [data] = useContext(Store)
-    // console.log("DATATTATA",data);
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Technology-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
 return(
     <>
     <div className="Tech6-Container">

@@ -1,10 +1,24 @@
-import React,{useContext} from "react";
-import Store from "../../Utility/ContextStore/ContextApi";
+import axios from "axios";
 import { Link } from "react-router-dom";
-
+import { useState,useEffect } from "react";
 
 const Latest = () =>{
-const [data] = useContext(Store)
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Food-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
 
     return(
         <>

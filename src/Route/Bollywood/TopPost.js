@@ -1,9 +1,25 @@
-import React, { useContext } from 'react'
-import Store from '../../Utility/ContextStore/ContextApi';
+import { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const BollywoodTopPost = () => {
-  const [data] = useContext(Store)
+
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Bollywood-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
   return (
    <>
       <div className="Bollywood-Top-Post-Container">

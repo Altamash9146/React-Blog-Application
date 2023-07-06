@@ -1,12 +1,26 @@
-import React ,{useContext}from "react";
+import axios from "axios"
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import myImage from "../../../facebook-instagram-and-twitter-icons-editorial-icons-set-free-vector.jpg"
 import "./Dangal.style.css"
-import Store from "../../../Utility/ContextStore/ContextApi";
 
 const  DangalContent = ()=>{
-    const [data] = useContext(Store)
-    // console.log("DATATTATA",data);
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Bollywood-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
 return(
     <>
     <div className="Dangal-Container">

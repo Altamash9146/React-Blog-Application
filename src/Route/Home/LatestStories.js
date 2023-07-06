@@ -1,9 +1,24 @@
-import React, { useContext } from "react";
-import Store from "../../Utility/ContextStore/ContextApi"; 
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState,useEffect } from "react";
 
 const LatestStories = () =>{
-const [data]= useContext(Store)
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+      Fetchdata()
+    },[])
+  
+    const Fetchdata = async ()=>{
+        try{
+            const response = await axios.get(`http://localhost:9002/api/blog/Fitness-Images`)
+            setData(response.data)
+        }
+  
+        catch(error){
+          console.log(error);
+        }
+    }
     return(
         <>
        
